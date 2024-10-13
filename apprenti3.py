@@ -56,7 +56,7 @@ assurance_vieillesse_deplafonnee_2025 = round(salaire_soumis_cotisations_2025 * 
 assurance_vieillesse_plafonnee_2025 = round(salaire_soumis_cotisations_2025 * 0.0690 if salaire_brut_horaire_2025 >= seuil_cotisations_2025 else 0, 2)
 retraite_t1_2025 = round(salaire_soumis_cotisations_2025 * 0.0315 if salaire_brut_horaire_2025 >= seuil_cotisations_2025 else 0, 2)
 ceg_t1_2025 = round(salaire_soumis_cotisations_2025 * 0.0086 if salaire_brut_horaire_2025 >= seuil_cotisations_2025 else 0, 2)
-csg_crds_2025 = round(salaire_brut_mensuel_2025 * 0.097 * 0.9825 if salaire_brut_horaire_2025 >= seuil_cotisations_2025 else 0, 2)
+csg_crds_2025 = round(salaire_soumis_cotisations_2025 * 0.097 * 0.9825 if salaire_brut_horaire_2025 >= seuil_cotisations_2025 else 0, 2)
 
 cotisations_salariales_2025 = round(
     assurance_vieillesse_deplafonnee_2025 + 
