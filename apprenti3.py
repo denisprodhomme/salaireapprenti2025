@@ -22,7 +22,7 @@ st.title("Salaire Apprenti version 2024 versus version 2025 dans le PLFSS")
 
 
 # Slider global pour le pourcentage du SMIC
-pourcentage_smic = st.slider("Pourcentage du SMIC", 20, 100, 70, step=1, help="Sélectionnez le pourcentage du SMIC.")
+pourcentage_smic = st.slider("Pourcentage du SMIC", 20, 150, 70, step=1, help="Sélectionnez le pourcentage du SMIC.")
 
 # Calcul pour 2024
 smic_2024 = 11.88
