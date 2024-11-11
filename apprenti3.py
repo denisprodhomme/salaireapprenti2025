@@ -8,9 +8,8 @@ st.set_page_config(page_title="Simulateur Salaire Apprenti", layout="wide")
 # Colonne de contexte
 st.sidebar.title("Pourquoi ce simulateur ?")
 st.sidebar.write(
-    "Ceci est un simulateur de calcul de salaire net pour un apprenti avec les données disponibles au 11/10/2024. \n\n"
-    "Le Projet de Loi de Finances de la Sécurité Sociale a été annoncé hier, apportant des changements notamment sur les cotisations des apprentis. \n\n"
-    "Si ce texte est voté, voici les changements qui s'appliqueraient.\n\n"
+    "Ceci est un simulateur de calcul de salaire net pour un apprenti avec les données disponibles au 11/11/2024. \n\n"
+    "Le Projet de Loi de Finances de la Sécurité Sociale est maintenant parti en première lecture au Sénat et ce qui est gardé pour l'instant, c'est l'assujettissement aux cotisations sociales et à la CSG pour les nouveaux contrats à partir de janvier 2025. \n\n"
     "L'exemple présenté utilise un apprenti rémunéré selon un pourcentage du SMIC, avec des cotisations classiques."
 )
 st.sidebar.markdown(
@@ -18,7 +17,7 @@ st.sidebar.markdown(
 )
 
 
-st.title("Salaire Apprenti version 2024 versus version 2025 dans le PLFSS")
+st.title("Salaire Apprenti contrat avant le 01//01/2025 versus contrat à partir du 01/01/2025 dans le PLFSS")
 
 
 # Slider global pour le pourcentage du SMIC
