@@ -69,7 +69,7 @@ salaire_net_mensuel_2025 = round(salaire_brut_mensuel_2025 - cotisations_salaria
 
 # Créer un DataFrame pour afficher les résultats sous forme de tableau
 data = {
-    "Type": ["Salaire Apprenti 2024", "Salaire Apprenti 2025"],
+    "Type": ["Salaire Apprenti contrat 2024", "Salaire Apprenti contrat 2025"],
     "Assurance vieillesse déplafonnée": [assurance_vieillesse_deplafonnee_2024, assurance_vieillesse_deplafonnee_2025],
     "Assurance vieillesse plafonnée": [assurance_vieillesse_plafonnee_2024, assurance_vieillesse_plafonnee_2025],
     "Retraite T1": [retraite_t1_2024, retraite_t1_2025],
@@ -87,7 +87,7 @@ st.table(df.style.format({col: "{:.2f}" for col in numeric_cols}))
 
 # Créer un graphique en barres
 bar_data = {
-    "Année": ["2024", "2024", "2025", "2025"],
+    "Année": ["contrat 2024", "contrat 2024", "contrat 2025", "contrat 2025"],
     "Type": ["Brut", "Net", "Brut", "Net"],
     "Montant": [salaire_brut_mensuel_2024, salaire_net_mensuel_2024, salaire_brut_mensuel_2025, salaire_net_mensuel_2025]
 }
